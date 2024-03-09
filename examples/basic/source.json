@@ -1,0 +1,52 @@
+{
+  "name": "Basic",
+  "startScreens": [
+    {
+      "header": "Welcome to Our Survey!",
+      "description": "Thank you for participating.",
+      "okButtonLabel": "Start Survey"
+    }
+  ],
+  "pages": [
+    {
+      "blocks": [
+        {
+          "title": "What is your name?",
+          "inputs": [
+            {
+              "type": "TEXT"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "blocks": [
+        {
+          "title": "How often do you exercise?",
+          "inputs": [
+            {
+              "type": "RADIO",
+              "label": "Daily"
+            },
+            {
+              "type": "RADIO",
+              "label": "Weekly"
+            },
+            {
+              "type": "RADIO",
+              "label": "Monthly"
+            }
+          ]
+        }
+      ],
+      "nextButtonLabel": "Submit"
+    }
+  ],
+  "completeScreens": [
+    {
+      "header": "Thank You!",
+      "description": "Your responses have been recorded."
+    }
+  ]
+}
