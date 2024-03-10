@@ -11,31 +11,19 @@
     {
       "blocks": [
         {
-          "title": "What is your name?",
-          "inputs": [
-            {
-              "type": "TEXT"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "blocks": [
-        {
-          "title": "How often do you exercise?",
+          "title": "What’s your favorite type of weather?",
           "inputs": [
             {
               "type": "RADIO",
-              "label": "Daily"
+              "label": "Sunny and warm"
             },
             {
               "type": "RADIO",
-              "label": "Weekly"
+              "label": "Cozy and rainy"
             },
             {
               "type": "RADIO",
-              "label": "Monthly"
+              "label": "Snowy and magical"
             }
           ]
         }

@@ -2,6 +2,8 @@
 
 This repository contains examples for SurveyCompo.
 
+[Browse the examples](https://surveycompo.github.io/examples/) for more information on how to use SurveyCompo.
+
 ## Running the examples locally
 
 To run the examples locally, you need to start a local server. If you have Python installed, you can use the provided `server.py` script.
