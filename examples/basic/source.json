@@ -46,7 +46,8 @@
   "completeScreens": [
     {
       "header": "Thank You!",
-      "description": "Your responses have been recorded."
+      "description": "Your responses have been recorded.",
+      "okButtonLabel": "Close"
     }
   ]
 }
