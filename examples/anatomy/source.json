@@ -1,0 +1,99 @@
+{
+  "name": "Survey Anatomy Example",
+  "css": ".footnote { color: gray; } \n .footnote a:hover { text-decoration: underline }",
+  "uiShowCloseButton": true,
+  "startScreens": [
+    {
+      "header": "We value your opinion!",
+      "htmlDescription": "Please take a moment to participate in our brief survey.",
+      "htmlFooter": "<p class='footnote'><a href=''>privacy</a> & <a href=''>cookie policy<a></p>",
+      "okButtonLabel": "Start Survey",
+      "cancelButtonLabel": "Skip"
+    }
+  ],
+  "pages": [
+    {
+      "header": "Basic Information",
+      "htmlDescription": "<p>Let’s begin by gathering some essential details. <br />We assure you that we will not share personal information.</p>",
+      "htmlFooter": "<p class='footnote'><a href=''>privacy</a> & <a href=''>cookie policy<a></p>",
+      "blocks": [
+        {
+          "title": "Gender",
+          "layoutColumnCount": 2,
+          "layoutColumnWidth": "50%",
+          "inputs": [
+            {
+              "type": "RADIO",
+              "label": "Male"
+            },
+            {
+              "type": "RADIO",
+              "label": "Female"
+            },
+            {
+              "type": "RADIO",
+              "label": "Non-binary"
+            },
+            {
+              "type": "RADIO",
+              "label": "Prefer not to say"
+            }
+          ]
+        },
+        {
+          "title": "Age",
+          "inputs": [
+            {
+              "type": "DROPDOWN",
+              "hint": "Please select ...",
+              "dropdownInputOptions": ["Under 18", "18-24", "25-34", "35-44", "45-54", "55-64", "65 or over"]
+            }
+          ]
+        }
+      ],
+      "nextButtonLabel": "Next"
+    },
+    {
+      "header": "Health and Wellness Survey",
+      "htmlFooter": "<p class='footnote'><a href=''>privacy</a> & <a href=''>cookie policy<a></p>",
+      "blocks": [
+        {
+          "title": "What’s your motivation for working out?",
+          "subtitle": "We want to know what drives you to stay fit and healthy.",
+          "description": "Select one or more from the following:",
+          "footnote": "* This question is required.",
+          "validations": [{ "type": "REQUIRED" }],
+          "inputs": [
+            {
+              "type": "CHECKBOX",
+              "hint": "Improve your mood, boost energy levels.",
+              "label": "Feeling Good"
+            },
+            {
+              "type": "CHECKBOX",
+              "hint": "Build muscle, gain strength, and see your physical fitness improve over time.",
+              "label": "Strength and Progress"
+            },
+            {
+              "type": "CHECKBOX",
+              "hint": "Clear your head, de-stress, and enjoy some mental clarity",
+              "label": "Time to Think"
+            },
+            {
+              "type": "CHECKBOX_TEXT",
+              "label": "Other (Please specify)"
+            }
+          ]
+        }
+      ],
+      "nextButtonLabel": "Submit"
+    }
+  ],
+  "completeScreens": [
+    {
+      "header": "Thank You!",
+      "description": "Your responses have been recorded.",
+      "okButtonLabel": "Close"
+    }
+  ]
+}
