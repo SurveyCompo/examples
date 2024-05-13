@@ -4,96 +4,94 @@
   "uiShowCloseButton": true,
   "startScreens": [
     {
-      "header": "We value your opinion!",
-      "htmlDescription": "Please take a moment to participate in our brief survey.",
-      "htmlFooter": "<p class='footnote'><a href=''>privacy</a> & <a href=''>cookie policy<a></p>",
-      "okButtonLabel": "Start Survey",
-      "cancelButtonLabel": "Skip"
+      "header": "We value your opinion! (screen header)",
+      "htmlDescription": "Please take a moment to participate in our brief survey. (screen description)",
+      "htmlFooter": "<p class='footnote'><a href=''>privacy</a> & <a href=''>cookie policy<a> (screen footer)</p>",
+      "okButtonLabel": "Start (ok button)",
+      "cancelButtonLabel": "Skip (cancel button)"
     }
   ],
   "pages": [
     {
-      "header": "Basic Information",
-      "htmlDescription": "<p>Let’s begin by gathering some essential details. <br />We assure you that we will not share personal information.</p>",
-      "htmlFooter": "<p class='footnote'><a href=''>privacy</a> & <a href=''>cookie policy<a></p>",
+      "header": "Basic Information (page header)",
+      "htmlDescription": "<p>Let’s begin by gathering some essential details. <br />We assure you that we will not share personal information. (page description)</p>",
+      "htmlFooter": "<p class='footnote'><a href=''>privacy</a> & <a href=''>cookie policy<a> (page footer)</p>",
       "blocks": [
         {
-          "title": "Gender",
-          "layoutColumnCount": 2,
-          "layoutColumnWidth": "50%",
+          "title": "Gender (block title)",
           "inputs": [
             {
               "type": "RADIO",
-              "label": "Male"
+              "label": "Male (input label)"
             },
             {
               "type": "RADIO",
-              "label": "Female"
+              "label": "Female (input label)"
             },
             {
               "type": "RADIO",
-              "label": "Non-binary"
+              "label": "Non-binary (input label)"
             },
             {
               "type": "RADIO",
-              "label": "Prefer not to say"
+              "label": "Prefer not to say (input label)"
             }
           ]
         },
         {
-          "title": "Age",
+          "title": "Age (block title)",
           "inputs": [
             {
               "type": "DROPDOWN",
-              "hint": "Please select ...",
+              "hint": "Please select ... (input hint)",
               "dropdownInputOptions": ["Under 18", "18-24", "25-34", "35-44", "45-54", "55-64", "65 or over"]
             }
           ]
         }
       ],
-      "nextButtonLabel": "Next"
+      "nextButtonLabel": "Next (next button)"
     },
     {
-      "header": "Health and Wellness Survey",
-      "htmlFooter": "<p class='footnote'><a href=''>privacy</a> & <a href=''>cookie policy<a></p>",
+      "header": "Health and Wellness Surveys (page header)",
+      "htmlFooter": "<p class='footnote'><a href=''>privacy</a> & <a href=''>cookie policy<a> (page footer)</p>",
       "blocks": [
         {
-          "title": "What’s your motivation for working out?",
-          "subtitle": "We want to know what drives you to stay fit and healthy.",
-          "description": "Select one or more from the following:",
-          "footnote": "* This question is required.",
+          "title": "What’s your motivation for working out? (block title)",
+          "subtitle": "We want to know what drives you to stay fit and healthy. (block subtitle)",
+          "description": "Select one or more from the following: (block description)",
+          "footnote": "* This question is required. (block footnote)",
           "validations": [{ "type": "REQUIRED" }],
           "inputs": [
             {
               "type": "CHECKBOX",
-              "hint": "Improve your mood, boost energy levels.",
-              "label": "Feeling Good"
+              "hint": "Improve your mood, boost energy levels. (input hint)",
+              "label": "Feeling Good (input label)"
             },
             {
               "type": "CHECKBOX",
-              "hint": "Build muscle, gain strength, and see your physical fitness improve over time.",
-              "label": "Strength and Progress"
+              "hint": "Build muscle, gain strength, and see your physical fitness improve over time. (input hint)",
+              "label": "Strength and Progress (input label)"
             },
             {
               "type": "CHECKBOX",
-              "hint": "Clear your head, de-stress, and enjoy some mental clarity",
-              "label": "Time to Think"
+              "hint": "Clear your head, de-stress, and enjoy some mental clarity. (input hint)",
+              "label": "Time to Think (input label)"
             },
             {
               "type": "CHECKBOX_TEXT",
-              "label": "Other (Please specify)"
+              "label": "Other (Please specify) (input label)"
             }
           ]
         }
       ],
-      "nextButtonLabel": "Submit"
+      "nextButtonLabel": "Submit (next button)"
     }
   ],
   "completeScreens": [
     {
-      "header": "Thank You!",
-      "description": "Your responses have been recorded.",
-      "okButtonLabel": "Close"
+      "header": "Thank You! (screen header)",
+      "description": "Your responses have been recorded. (screen description)",
+      "okButtonLabel": "Close (ok button)"
     }
   ]
 }

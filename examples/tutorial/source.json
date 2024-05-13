@@ -1,0 +1,159 @@
+{
+  "name": "Product Satisfaction Survey",
+  "theme": {
+    "primaryColor": "#3b82f6",
+    "fontFamily": "Arial, sans-serif",
+    "defaultRadius": "2em",
+    "textareaRadius": "1em"
+  },
+  "startScreens": [
+    {
+      "header": "Welcome to Our Survey!",
+      "description": "Thank you for participating.",
+      "okButtonLabel": "Start Survey"
+    }
+  ],
+  "pages": [
+    {
+      "header": "About You",
+      "blocks": [
+        {
+          "title": "Please enter your age",
+          "inputs": [
+            {
+              "type": "TEXT",
+              "id": "age",
+              "textInputType": "NUMBER",
+              "validations": [
+                {
+                  "type": "INTEGER",
+                  "message": "Please enter your age in whole number"
+                },
+                {
+                  "type": "MAX_VALUE",
+                  "value": 100,
+                  "message": "Please enter a valid age"
+                },
+                {
+                  "type": "REQUIRED",
+                  "message": "Please enter your age"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "What is your preferred method of contact?",
+          "inputs": [
+            {
+              "type": "DROPDOWN",
+              "hint": "Please select",
+              "id": "methodOfContact",
+              "dropdownInputOptions": [
+                "Email",
+                "Phone",
+                "Text Message"
+              ],
+              "validations": [
+                {
+                  "type": "REQUIRED",
+                  "message": "Please select your preferred method of contact"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "How did you hear about us?",
+          "subtitle": "Please select 2",
+          "inputs": [
+            {
+              "type": "CHECKBOX",
+              "id": "friendFamily",
+              "randomWithinGroup": "something",
+              "label": "Friend/Family"
+            },
+            {
+              "type": "CHECKBOX",
+              "id": "onlineAd",
+              "randomWithinGroup": "something",
+              "label": "Online Ad"
+            },
+            {
+              "type": "CHECKBOX",
+              "id": "socialMedia",
+              "randomWithinGroup": "something",
+              "label": "Social Media"
+            },
+            {
+              "type": "CHECKBOX",
+              "id": "searchEngine",
+              "randomWithinGroup": "something",
+              "label": "Search Engine"
+            },
+            {
+              "type": "CHECKBOX_TEXT",
+              "id": "others",
+              "label": "Others"
+            }
+          ],
+          "validations": [
+            {
+              "type": "MIN_SELECTION",
+              "value": 2,
+              "message": "Please select 2 or more options"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Product Satisfaction",
+      "nextButtonLabel": "Submit",
+      "blocks": [
+        {
+          "title": "Overall, how satisfied are you with our product?",
+          "inputs": [
+            {
+              "type": "LIKERT_SCALE",
+              "likertInputPreset": "SATISFACTION_5"
+            }
+          ]
+        },
+        {
+          "title": "What do you like most about our product?",
+          "inputs": [
+            {
+              "type": "TEXTAREA",
+              "hint": "Please share your thoughts"
+            }
+          ]
+        },
+        {
+          "title": "What could be improved about our product?",
+          "inputs": [
+            {
+              "type": "TEXTAREA",
+              "hint": "Please share your thoughts"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "completeScreens": [
+    {
+      "header": "Thank You!",
+      "description": "Your feedback is greatly appreciated.",
+      "okButtonLabel": "Close"
+    }
+  ],
+  "abortScreens": [
+    {
+      "header": "Disqualified",
+      "description": "You must be 18 years or older to participate. You are currently {#age} years old.",
+      "okButtonLabel": "Close",
+      "visibleIf": "#age < 18"
+    }
+  ]
+}
