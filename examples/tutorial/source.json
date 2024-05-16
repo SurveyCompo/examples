@@ -116,7 +116,8 @@
           "inputs": [
             {
               "type": "LIKERT_SCALE",
-              "likertInputPreset": "SATISFACTION_5"
+              "likertInputPreset": "SATISFACTION_5",
+              "id": "satisfaction"
             }
           ]
         },
@@ -127,7 +128,13 @@
               "type": "TEXTAREA",
               "hint": "Please share your thoughts"
             }
-          ]
+          ],
+          "visibleIf": {
+            "$or": [
+              "#satisfaction == Very satisfied",
+              "#satisfaction == Satisfied"
+            ]
+          }
         },
         {
           "title": "What could be improved about our product?",
@@ -136,7 +143,13 @@
               "type": "TEXTAREA",
               "hint": "Please share your thoughts"
             }
-          ]
+          ],
+          "visibleIf": {
+            "$or": [
+              "#satisfaction == Very dissatisfied",
+              "#satisfaction == Dissatisfied"
+            ]
+          }
         }
       ]
     }
