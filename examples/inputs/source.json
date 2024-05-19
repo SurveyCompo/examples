@@ -1,0 +1,263 @@
+{
+  "name": "Input Demo",
+  "startScreens": [
+    {
+      "header": "Your Feedback on SurveyCompo",
+      "description": "Share your thoughts and shape the future of SurveyCompo!",
+      "okButtonLabel": "Start Survey"
+    }
+  ],
+  "pages": [
+    {
+      "blocks": [
+        {
+          "title": "Which features of SurveyCompo do you use most frequently?",
+          "subtitle": "Check all that apply",
+          "inputs": [
+            {
+              "type": "CHECKBOX",
+              "label": "Customizable question types"
+            },
+            {
+              "type": "CHECKBOX",
+              "label": "Real-time response tracking"
+            },
+            {
+              "type": "CHECKBOX",
+              "label": "Logic jumps and branching"
+            },
+            {
+              "type": "CHECKBOX",
+              "label": "Data analysis and reporting"
+            },
+            {
+              "type": "CHECKBOX_TEXT",
+              "label": "Other (please specify)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "blocks": [
+        {
+          "title": "How did you first hear about SurveyCompo?",
+          "inputs": [
+            {
+              "type": "RADIO",
+              "label": "Online search"
+            },
+            {
+              "type": "RADIO",
+              "label": "Social media"
+            },
+            {
+              "type": "RADIO",
+              "label": "Recommendation from a friend/colleague"
+            },
+            {
+              "type": "RADIO_TEXT",
+              "label": "Other (please specify)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "blocks": [
+        {
+          "title": "How likely are you to recommend SurveyCompo to a friend or colleague?",
+          "inputs": [
+            {
+              "type": "NUMBER_SCALE",
+              "numberScaleInputLabels": [
+                "Not likely",
+                "Very Likely"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "blocks": [
+        {
+          "title": "Which of these images best represents your experience with SurveyCompo?",
+          "layoutColumnCount": 5,
+          "layoutColumnWidth": "80px",
+          "layoutColumnGap": "1em",
+          "inputs": [
+            {
+              "type": "IMAGE",
+              "imageInputSrc": "https://surveycompo.github.io/examples/images/face-laughing.svg",
+              "imageInputNoBorder": true,
+              "label": "Excellent"
+            },
+            {
+              "type": "IMAGE",
+              "imageInputSrc": "https://surveycompo.github.io/examples/images/face-smile.svg",
+              "imageInputNoBorder": true,
+              "label": "Good"
+            },
+            {
+              "type": "IMAGE",
+              "imageInputSrc": "https://surveycompo.github.io/examples/images/face-neutral.svg",
+              "imageInputNoBorder": true,
+              "label": "Average"
+            },
+            {
+              "type": "IMAGE",
+              "imageInputSrc": "https://surveycompo.github.io/examples/images/face-frown.svg",
+              "imageInputNoBorder": true,
+              "label": "Bad"
+            },
+            {
+              "type": "IMAGE",
+              "imageInputSrc": "https://surveycompo.github.io/examples/images/face-angry.svg",
+              "imageInputNoBorder": true,
+              "label": "terrible"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "blocks": [
+        {
+          "title": "Please rate the following aspects of SurveyCompo.",
+          "inputs": [
+            {
+              "type": "STAR_SCALE",
+              "label": "Ease of Use:",
+              "labelPosition": "LEFT",
+              "labelWidth": "8em"
+            },
+            {
+              "type": "STAR_SCALE",
+              "label": "Value for money:",
+              "labelPosition": "LEFT",
+              "labelWidth": "8em"
+            },
+            {
+              "type": "STAR_SCALE",
+              "label": "Customer support:",
+              "labelPosition": "LEFT",
+              "labelWidth": "8em"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "blocks": [
+        {
+          "title": "Overall, how satisfied are you with SurveyCompo?",
+          "inputs": [
+            {
+              "type": "LIKERT_SCALE",
+              "likertInputPreset": "SATISFACTION_5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "blocks": [
+        {
+          "title": "Please rate your satisfaction with the following aspects of SurveyCompo",
+          "inputs": [
+            {
+              "type": "LIKERT_SCALE",
+              "label": "User Interface (UI)",
+              "likertInputPreset": "SATISFACTION_5"
+            },
+            {
+              "type": "LIKERT_SCALE",
+              "label": "Customization Options",
+              "likertInputPreset": "SATISFACTION_5"
+            },
+            {
+              "type": "LIKERT_SCALE",
+              "label": "Customer Support",
+              "likertInputPreset": "SATISFACTION_5"
+            },
+            {
+              "type": "LIKERT_SCALE",
+              "label": "Pricing",
+              "likertInputPreset": "SATISFACTION_5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "blocks": [
+        {
+          "title": "How often do you use SurveyCompo?",
+          "inputs": [
+            {
+              "type": "DROPDOWN",
+              "hint": "-- Please select --",
+              "dropdownInputOptions": [
+                "Daily",
+                "Weekly",
+                "Monthly",
+                "Less often"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "blocks": [
+        {
+          "title": " Please share any additional comments or suggestions you have about SurveyCompo:",
+          "inputs": [
+            {
+              "type": "TEXTAREA"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "blocks": [
+        {
+          "title": "Would you like to receive updates about SurveyCompo?",
+          "inputs": [
+            {
+              "type": "TOGGLE",
+              "label": "Email Subscription",
+              "labelPosition": "LEFT",
+              "labelWidth": "10em"
+
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "blocks": [
+        {
+          "title": "What is your Email address?",
+          "inputs": [
+            {
+              "type": "TEXT",
+              "hint": "name@example.com",
+              "textInputType": "EMAIL"
+
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "completeScreens": [
+    {
+      "header": "Thank You!",
+      "description": "Your feedback is important to us. Thank you for taking the time to complete this survey!",
+      "okButtonLabel": "Close"
+    }
+  ]
+}
