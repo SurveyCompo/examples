@@ -84,7 +84,7 @@
         {
           "title": "Which of these images best represents your experience with SurveyCompo?",
           "layoutColumnCount": 5,
-          "layoutColumnWidth": "80px",
+          "layoutColumnWidth": "70px",
           "layoutColumnGap": "1em",
           "inputs": [
             {
@@ -130,19 +130,19 @@
               "type": "STAR_SCALE",
               "label": "Ease of Use:",
               "labelPosition": "LEFT",
-              "labelWidth": "8em"
+              "labelWidth": "10em"
             },
             {
               "type": "STAR_SCALE",
               "label": "Value for money:",
               "labelPosition": "LEFT",
-              "labelWidth": "8em"
+              "labelWidth": "10em"
             },
             {
               "type": "STAR_SCALE",
               "label": "Customer support:",
               "labelPosition": "LEFT",
-              "labelWidth": "8em"
+              "labelWidth": "10em"
             }
           ]
         }
@@ -228,10 +228,15 @@
           "inputs": [
             {
               "type": "TOGGLE",
-              "label": "Email Subscription",
+              "label": "Promotion",
               "labelPosition": "LEFT",
               "labelWidth": "10em"
-
+            },
+            {
+              "type": "TOGGLE",
+              "label": "Newsletter",
+              "labelPosition": "LEFT",
+              "labelWidth": "10em"
             }
           ]
         }
