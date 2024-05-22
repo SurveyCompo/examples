@@ -155,7 +155,7 @@
           "inputs": [
             {
               "type": "LIKERT_SCALE",
-              "likertInputPreset": "SATISFACTION_5"
+              "likertInputPreset": "SATISFACTION"
             }
           ]
         }
@@ -169,22 +169,22 @@
             {
               "type": "LIKERT_SCALE",
               "label": "User Interface (UI)",
-              "likertInputPreset": "SATISFACTION_5"
+              "likertInputPreset": "SATISFACTION"
             },
             {
               "type": "LIKERT_SCALE",
               "label": "Customization Options",
-              "likertInputPreset": "SATISFACTION_5"
+              "likertInputPreset": "SATISFACTION"
             },
             {
               "type": "LIKERT_SCALE",
               "label": "Customer Support",
-              "likertInputPreset": "SATISFACTION_5"
+              "likertInputPreset": "SATISFACTION"
             },
             {
               "type": "LIKERT_SCALE",
               "label": "Pricing",
-              "likertInputPreset": "SATISFACTION_5"
+              "likertInputPreset": "SATISFACTION"
             }
           ]
         }

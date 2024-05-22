@@ -116,7 +116,7 @@
           "inputs": [
             {
               "type": "LIKERT_SCALE",
-              "likertInputPreset": "SATISFACTION_5",
+              "likertInputPreset": "SATISFACTION",
               "id": "satisfaction"
             }
           ]
