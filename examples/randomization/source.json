@@ -1,0 +1,86 @@
+{
+  "name": "Randomization",
+  "uiShowCloseButton": true,
+  "pages": [
+    {
+      "randomWithinGroup": "pageRand",
+      "blocks": [
+        {
+          "title": "How would you rate the overall user experience of our app?",
+          "randomWithinGroup": "blockRand",
+          "inputs": [
+            {
+              "type": "LIKERT_SCALE",
+              "likertInputPreset": "QUALITY"
+            }
+          ]
+        },
+        {
+          "title": "How satisfied are you with the speed/performance of our app?",
+          "randomWithinGroup": "blockRand",
+          "inputs": [
+            {
+              "type": "LIKERT_SCALE",
+              "likertInputPreset": "SATISFACTION"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "randomWithinGroup": "pageRand",
+      "blocks": [
+        {
+          "randomWithinGroup": "blockRand",
+          "title": "Which of the following features do you use most often?",
+          "inputs": [
+            {
+              "randomWithinGroup": "inputRand",
+              "label": "Randomize",
+              "type": "RADIO"
+            },
+            {
+              "randomWithinGroup": "inputRand",
+              "label": "Piping",
+              "type": "RADIO"
+            },
+            {
+              "randomWithinGroup": "inputRand",
+              "label": "Conditional Logic",
+              "type": "RADIO"
+            },
+            {
+              "label": "Other",
+              "type": "RADIO"
+            }
+          ]
+        },
+        {
+          "randomWithinGroup": "blockRand",
+          "title": "How did you first learn about our product/service?",
+          "inputs": [
+            {
+              "randomWithinGroup": "inputRand",
+              "label": "Online advertisement",
+              "type": "CHECKBOX"
+            },
+            {
+              "randomWithinGroup": "inputRand",
+              "label": "Word of mouth",
+              "type": "CHECKBOX"
+            },
+            {
+              "randomWithinGroup": "inputRand",
+              "label": "Social media",
+              "type": "CHECKBOX"
+            },
+            {
+              "label": "Other",
+              "type": "CHECKBOX_TEXT"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
