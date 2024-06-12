@@ -1,0 +1,72 @@
+{
+  "name": "Piping",
+  "variables": {
+    "name": "john"
+  },
+  "startScreens": [
+    {
+      "header": "We value your insights! ",
+      "description": "Hello {$name|cap}, would you be interested in participating in our survey?",
+      "okButtonLabel": "Start Survey"
+    }
+  ],
+  "pages": [
+    {
+      "blocks": [
+        {
+          "title": "How many months have you been using our service?",
+          "validations": [
+            {
+              "type": "REQUIRED"
+            }
+          ],
+          "inputs": [
+            {
+              "id": "duration",
+              "checkedValue": 0,
+              "type": "TEXT",
+              "textInputType": "NUMBER",
+              "textInputMax": 100,
+              "textInputMin": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "blocks": [
+        {
+          "title": "As {#duration|gt:6:an experienced:a new} user, how would you rate your satisfaction after {#duration} {#duration|plural:month:months} of usage?",
+          "validations": [{"type": "REQUIRED"}],
+          "inputs": [
+            {
+              "type": "LIKERT_SCALE",
+              "id": "rate",
+              "likertInputPreset": "SATISFACTION"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "blocks": [
+        {
+          "htmlTitle": "What are the main reasons you rated your experience as <strong>'{#rate|title}'</strong>?",
+          "inputs": [
+            {
+              "type": "TEXTAREA",
+              "id": "rate_reason"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "completeScreens": [
+    {
+      "header": "Thank you!",
+      "description": "{$name|cap}, thank you for taking the time to complete this survey!",
+      "okButtonLabel": "Close"
+    }
+  ]
+}
