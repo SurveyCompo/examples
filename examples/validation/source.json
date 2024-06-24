@@ -1,0 +1,286 @@
+{
+  "name": "Survey Validation",
+  "startScreens": [
+    {
+      "header": "Welcome to Our Survey",
+      "description": "We're eager to learn more about you. Thank you for your participation!",
+      "okButtonLabel": "Begin Survey"
+    }
+  ],
+  "pages": [
+    {
+      "blocks": [
+        {
+          "title": "What is your full name?",
+          "inputs": [
+            {
+              "type": "TEXT",
+              "hint": "Your full name",
+              "validations": [
+                {
+                  "type": "REQUIRED",
+                  "message": "Your full name is required."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "blocks": [
+        {
+          "title": "What is your email address?",
+          "inputs": [
+            {
+              "type": "TEXT",
+              "textInputType": "EMAIL",
+              "validations": [
+                {
+                  "type": "EMAIL",
+                  "message": "Please enter a valid email address."
+                },
+                {
+                  "type": "REQUIRED",
+                  "message": "An email address is required."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "blocks": [
+        {
+          "title": "What is your personal or business website?",
+          "inputs": [
+            {
+              "type": "TEXT",
+              "hint": "https://yourwebsite.com",
+              "validations": [
+                {
+                  "type": "URL",
+                  "message": "Please enter a valid URL."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "blocks": [
+        {
+          "title": "What is your favorite domain?",
+          "inputs": [
+            {
+              "type": "TEXT",
+              "hint": "For example, example.com",
+              "validations": [
+                {
+                  "type": "DOMAIN",
+                  "message": "Please enter a valid domain."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "blocks": [
+        {
+          "title": "How many hours do you spend on our product each week?",
+          "inputs": [
+            {
+              "type": "TEXT",
+              "validations": [
+                {
+                  "type": "NUMERIC",
+                  "message": "Please enter a numeric value."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "blocks": [
+        {
+          "title": "How many items do you usually purchase at once?",
+          "inputs": [
+            {
+              "type": "TEXT",
+              "textInputType": "NUMBER",
+              "validations": [
+                {
+                  "type": "INTEGER",
+                  "message": "Please enter a whole number."
+                },
+                {
+                  "type": "MIN_VALUE",
+                  "value": 2,
+                  "message": "The minimum order quantity is 2."
+                },
+                {
+                  "type": "MAX_VALUE",
+                  "value": 10,
+                  "message": "The maximum order quantity is 10."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "blocks": [
+        {
+          "title": "Create a username:",
+          "inputs": [
+            {
+              "type": "TEXT",
+              "validations": [
+                {
+                  "type": "REQUIRED",
+                  "message": "A username is required."
+                },
+                {
+                  "type": "MIN_LENGTH",
+                  "value": 5,
+                  "message": "Your username must be at least 5 characters long."
+                },
+                {
+                  "type": "MAX_LENGTH",
+                  "value": 10,
+                  "message": "Your username must be no more than 10 characters long."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "blocks": [
+        {
+          "title": "Create a password:",
+          "inputs": [
+            {
+              "id": "pwd",
+              "type": "TEXT",
+              "textInputType": "PASSWORD",
+              "label": "New Password",
+              "validations": [
+                {
+                  "type": "REQUIRED",
+                  "message": "A password is required."
+                },
+                {
+                  "type": "REGEX",
+                  "value": "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).+$",
+                  "message": "Your password must include at least one uppercase letter, one lowercase letter, and one digit."
+                }
+              ]
+            },
+            {
+              "type": "TEXT",
+              "textInputType": "PASSWORD",
+              "label": "Confirm Password",
+              "validations": [
+                {
+                  "type": "REQUIRED",
+                  "message": "Confirming your password is required."
+                },
+                {
+                  "type": "EQUALS",
+                  "value": "#pwd",
+                  "message": "The passwords do not match."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "blocks": [
+        {
+          "title": "Please select 2 to 3 of your favorite hobbies:",
+          "validations": [{
+            "type": "MIN_SELECTION",
+            "value": 2
+          },
+          {
+            "type": "MAX_SELECTION",
+            "value": 3
+          }],
+          "inputs": [
+            {
+              "type": "CHECKBOX",
+              "label": "Reading"
+            },
+            {
+              "type": "CHECKBOX",
+              "label": "Traveling"
+            },
+            {
+              "type": "CHECKBOX",
+              "label": "Cooking"
+            },
+            {
+              "type": "CHECKBOX",
+              "label": "Sports"
+            },
+            {
+              "type": "CHECKBOX",
+              "label": "Music"
+            },
+            {
+              "type": "CHECKBOX",
+              "label": "Movies"
+            },
+            {
+              "type": "CHECKBOX",
+              "label": "Others"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "blocks": [
+        {
+          "title": "Preferred Contact Method:",
+          "validations": [{
+            "type": "REQUIRED",
+            "message": "Please select at least one method"
+          }],
+          "inputs": [
+            {
+              "type": "CHECKBOX",
+              "label": "Email"
+            },
+            {
+              "type": "CHECKBOX",
+              "label": "Phone"
+            },
+            {
+              "type": "CHECKBOX",
+              "label": "Postage Male"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "completeScreens": [
+    {
+      "header": "Thank You!",
+      "description": "We greatly appreciate your time and feedback.",
+      "okButtonLabel": "Finish"
+    }
+  ]
+}
