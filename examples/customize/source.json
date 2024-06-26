@@ -93,7 +93,7 @@
         {
           "title": "Which of these images best represents your experience with SurveyCompo?",
           "layoutColumnCount": 0,
-          "layoutColumnWidth": "60px",
+          "layoutColumnWidth": "70px",
           "layoutColumnGap": "1em",
           "layoutColumnAutoFit": false,
           "inputs": [
