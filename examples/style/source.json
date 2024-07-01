@@ -1,0 +1,42 @@
+{
+  "name": "CSS Example",
+  "css": ".sc-survey { background-image: url('/images/background.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;}",
+  "startScreens": [
+    {
+      "header": "Welcome to Our Survey!",
+      "description": "Thank you for participating.",
+      "okButtonLabel": "Start Survey"
+    }
+  ],
+  "pages": [
+    {
+      "blocks": [
+        {
+          "title": "What’s your favorite type of weather?",
+          "inputs": [
+            {
+              "type": "RADIO",
+              "label": "Sunny and warm"
+            },
+            {
+              "type": "RADIO",
+              "label": "Cozy and rainy"
+            },
+            {
+              "type": "RADIO",
+              "label": "Snowy and magical"
+            }
+          ]
+        }
+      ],
+      "nextButtonLabel": "Submit"
+    }
+  ],
+  "completeScreens": [
+    {
+      "header": "Thank You!",
+      "description": "Your responses have been recorded.",
+      "okButtonLabel": "Close"
+    }
+  ]
+}
