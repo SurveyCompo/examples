@@ -1,6 +1,6 @@
 {
   "name": "CSS Example",
-  "css": ".sc-survey { background-image: url('/images/background.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;}",
+  "css": ".sc-survey { background-image: url('https://surveycompo.github.io/examples/images/background.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;}",
   "startScreens": [
     {
       "header": "Welcome to Our Survey!",
