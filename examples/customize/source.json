@@ -208,7 +208,12 @@
             {
               "type": "DROPDOWN",
               "hint": "-- Please select --",
-              "dropdownInputPreset": "COUNTRIES"
+              "dropdownInputOptions": [
+                "Daily",
+                "Weekly",
+                "Monthly",
+                "Less often"
+              ]
             }
           ]
         }
