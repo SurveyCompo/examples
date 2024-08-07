@@ -14,7 +14,7 @@
   "pages": [
     {
       "header": "Basic Information (page header)",
-      "htmlDescription": "<p>Let’s begin by gathering some essential details. <br />We assure you that we will not share personal information. (page description)</p>",
+      "htmlDescription": "<p>Let's begin by gathering some essential details. <br />We assure you that we will not share personal information. (page description)</p>",
       "htmlFooter": "<p class='footnote'><a href=''>privacy</a> & <a href=''>cookie policy<a> (page footer)</p>",
       "blocks": [
         {
@@ -56,7 +56,7 @@
       "htmlFooter": "<p class='footnote'><a href=''>privacy</a> & <a href=''>cookie policy<a> (page footer)</p>",
       "blocks": [
         {
-          "title": "What’s your motivation for working out? (block title)",
+          "title": "What's your motivation for working out? (block title)",
           "subtitle": "We want to know what drives you to stay fit and healthy. (block subtitle)",
           "description": "Select one or more from the following: (block description)",
           "footnote": "* This question is required. (block footnote)",
