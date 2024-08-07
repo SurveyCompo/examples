@@ -3,7 +3,7 @@
   "theme": {
     "primaryColor": "#0b703f",
     "textColor": "#213029",
-    "backgroundColor": "#ead971",
+    "backgroundColor": "#e8dcca",
     "defaultRadius": "2em",
     "textareaRadius": "1em"
   },
@@ -25,7 +25,7 @@
           "inputs": [
             {
               "type": "CHECKBOX",
-              "label": "Customizable question types"
+              "label": "Customizable style"
             },
             {
               "type": "CHECKBOX",
