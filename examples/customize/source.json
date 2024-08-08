@@ -183,7 +183,7 @@
             },
             {
               "type": "LIKERT_SCALE",
-              "label": "Customization Options",
+              "label": "Customization",
               "likertInputPreset": "SATISFACTION"
             },
             {
