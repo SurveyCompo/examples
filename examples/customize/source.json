@@ -249,7 +249,7 @@
     {
       "blocks": [
         {
-          "title": "Please provide your name",
+          "title": "Please provide your details.",
           "inputs": [
             {
               "type": "TEXT",
