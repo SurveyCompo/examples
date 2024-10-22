@@ -11,19 +11,15 @@
     {
       "blocks": [
         {
-          "title": "What's your favorite type of weather?",
+          "title": "Which type of vacation do you prefer?",
           "inputs": [
             {
               "type": "RADIO",
-              "label": "Sunny and warm"
+              "label": "Beach"
             },
             {
               "type": "RADIO",
-              "label": "Cozy and rainy"
-            },
-            {
-              "type": "RADIO",
-              "label": "Snowy and magical"
+              "label": "Mountains"
             }
           ]
         }
