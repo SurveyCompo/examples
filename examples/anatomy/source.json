@@ -1,7 +1,9 @@
 {
   "name": "Survey Anatomy Example",
   "css": ".footnote { color: gray; } \n .footnote a:hover { text-decoration: underline }",
-  "uiShowCloseButton": true,
+  "uiSettings": {
+    "showCloseButton": true
+  },
   "startScreens": [
     {
       "header": "We value your opinion! (screen header)",

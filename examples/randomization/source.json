@@ -1,6 +1,8 @@
 {
   "name": "Randomization",
-  "uiShowCloseButton": true,
+  "uiSettings": {
+    "showCloseButton": true
+  },
   "pages": [
     {
       "randomWithinGroup": "pageRand",
