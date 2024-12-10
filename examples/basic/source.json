@@ -1,5 +1,9 @@
 {
   "name": "Basic",
+  "uiSettings": {
+    "useResponsiveButtons": false,
+    "showProgress": false
+  },
   "startScreens": [
     {
       "header": "Welcome to Our Survey!",
